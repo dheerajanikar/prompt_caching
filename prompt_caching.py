@@ -24,11 +24,11 @@ except UnicodeDecodeError:
 system_messages = [
         {
                 "type": "text",
-                "text": "You are an AI assistant specializing in explaining the Llama 3.1 paper."
+                "text": "You are an AI assistant specializing in explaining the Llama 3.1 blog."
         },
         {
                 "type": "text",
-                "text": f"Here's the full text of the Llama 3.1 paper:\n\n{paper_content}",
+                "text": f"Here's the full text of the Llama 3.1 blog:\n\n{blog_content}",
                 "cache_control": {"type": "ephemeral"}
         } 
 ]
@@ -36,18 +36,18 @@ system_messages = [
 messages = [
     {
         "role": "user",
-        "content": "Provide a brief summary of the key points in this paper."
+        "content": "Provide a brief summary of the key points in this blog."
     }
 ]
 
-print("Chat about Llama 3.1 paper. Type 'quit' to exit.")
+print("Chat about Llama 3.1 blog. Type 'quit' to exit.")
 
 
 while True:
     try:
         response = client.beta.prompt_caching.messages.create(
             model="claude-3-5-sonnet-20240620",
-            max_tokens=2048,  # Increased token limit
+            max_tokens=2048,  
             system=system_messages,
             messages=messages
         )

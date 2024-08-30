@@ -9,7 +9,7 @@ client = anthropic.Anthropic(
     api_key = os.environ["ANTHROPIC_API_KEY"]
 )
 
-# Load the paper content from a file
+# Load the text content from a file
 
 try:
     with open('llama3_1.txt', 'r', encoding='utf-8', errors='ignore') as file:

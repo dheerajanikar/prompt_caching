@@ -1,6 +1,6 @@
 Paper Chat Script
 
-This Python script implements a multi-turn conversation system that allows users to interact with an AI assistant specializing in explaining the Llama 3.1 paper. The script uses the Anthropic API with Claude 3.5 Sonnet model and implements prompt caching for efficient conversation handling.
+This Python script implements a multi-turn conversation system that allows users to interact with an AI assistant specializing in explaining the Llama 3.1 blog. The script uses the Anthropic API with Claude 3.5 Sonnet model and implements prompt caching for efficient conversation handling.
 
 
 Features
@@ -41,5 +41,5 @@ Run the script:
 python script_name.py
 
 	•	The AI will start by providing a brief summary of the key points in the .txt file you have
-	•	You can then enter your questions or comments about the paper. The AI will respond based on the paper's content.
+	•	You can then enter your questions or comments about the blog. The AI will respond based on the blog's content.
 	•	To end the conversation, type 'quit'.
